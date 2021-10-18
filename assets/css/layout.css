@@ -1983,4 +1983,10 @@ pointer-events: none;
         font-size: 1.3rem;
         line-height: 1.5;
     }
+    .getin_touch_pop_ins .pr {
+        width: 100%;
+    }
+    .getin_touch_form .form_grp.half {
+        width: 100%;
+    }
 }
