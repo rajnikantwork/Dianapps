@@ -26,10 +26,12 @@ $(function() {
             $("header").removeClass("stickey_header");
         }
     });
-    //   $("#hamburger").on("click", function() {
-    //       $(this).toggleClass("active");
-    //       $('body').toggleClass("open-menu");
-    //   });
+    $(".mb_menu_bar").on("click", function() {
+        $('body').addClass("open-menu");
+    });
+    $(".mb_close").on("click", function() {
+        $('body').removeClass("open-menu");
+    });
 
     //   if ($(window).width() < 767) {
     //       $(".navbar_wrapper>li>a").on("click", function() {
