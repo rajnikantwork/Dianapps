@@ -283,6 +283,8 @@ textarea {
     font-size: 1rem;
     appearance: none;
     -webkit-appearance: none;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 600;
     width: 100%;
     transition: all ease-in .3s;
     -moz-transition: all ease-in .3s;
@@ -772,6 +774,105 @@ form label {
     padding: 120px 0;
 }
 
+.modal-box {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    outline: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.popup_inside_section {
+    position: relative;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    margin: 0 auto;
+}
+
+.js-modal-close {
+    position: absolute;
+    font-size: 30px;
+    right: 10px;
+    color: #fff;
+    top: 10px;
+    width: 30px;
+    text-align: center;
+}
+
+@-webkit-keyframes scale_cl {
+    0% {
+        transform: scale(1)
+    }
+    15% {
+        transform: scale(1.5)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+@keyframes scale_cl {
+    0% {
+        transform: scale(1)
+    }
+    15% {
+        transform: scale(1.5)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+.js-modal-close:hover {
+    -webkit-animation: scale_cl .5s linear 1;
+    animation: scale_cl .5s linear 1;
+    -webkit-animation-delay: .1s;
+    animation-delay: .1s;
+}
+
+.getin_touch_pop_ins {
+    position: relative;
+}
+
+.modal-overlay {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8) !important;
+}
+
+.popup_open,
+.open-menu {
+    height: 100vh;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 1366px) {
+    .btn_line.b {
+        font-size: 1.05rem;
+        padding: 13px 35.4px 13px;
+    }
+    .fn_sz_26 {
+        font-size: 1.325rem;
+    }
+    .fn_sz_44 {
+        font-size: 2.35rem;
+    }
+}
+
 @media only screen and (max-width: 1170px) {
     .container {
         padding-left: 15px;
@@ -781,7 +882,17 @@ form label {
 
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
 
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {}
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .wp_padding {
+        padding: 80px 0;
+    }
+    .fn_sz_48 {
+        font-size: 2.4rem;
+    }
+    .fn_sz_18 {
+        font-size: 1.025rem;
+    }
+}
 
 @media only screen and (max-width: 767px) {
     .fn_sz_24 {
@@ -789,5 +900,8 @@ form label {
     }
     .fn_sz_30 {
         font-size: 1.575rem;
+    }
+    .hd_s {
+        font-size: 2rem;
     }
 }
