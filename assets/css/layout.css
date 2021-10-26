@@ -334,9 +334,10 @@
     margin-bottom: -30px;
 }
 
-.domains_ls:last-child {
+
+/* .domains_ls:last-child {
     flex-direction: row-reverse
-}
+} */
 
 .domains_ls {
     align-items: center;
@@ -349,7 +350,7 @@
 }
 
 .domains_ls:last-child {
-    counter-reset: section 4
+    counter-reset: section
 }
 
 .domains_ls li {
@@ -390,6 +391,10 @@
 
 .services_ls_bx.rt ol:nth-child(2) {
     animation: services2b 60s linear 10s infinite
+}
+
+.services_ls_bx.rt .domains_ls {
+    counter-reset: section 4
 }
 
 @keyframes services1a {
@@ -838,9 +843,16 @@ pointer-events: none;
 }
 
 .serv_tabs_ls li a p {
-    font-size: 1rem;
-    padding: 0 30px;
+    font-size: 0.9rem;
+    padding: 0 20px;
     line-height: 1.67;
+}
+
+.serv_tabs_ls li a p.hide {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .serv_tabs_ls li a:hover {
@@ -897,7 +909,7 @@ pointer-events: none;
 .slt_caption .nv {
     font-family: 'Assistant', sans-serif;
     display: table;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: #fff;
     margin-bottom: 10px;
@@ -919,11 +931,18 @@ pointer-events: none;
 }
 
 .slt_caption p {
-    font-size: 1.125rem;
+    font-size: 0.925rem;
     line-height: 1.67;
     opacity: 0;
     visibility: hidden;
     transition-delay: 0s !important;
+}
+
+.slt_caption p.hide {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
 }
 
 #productsSl .slick-center .lst_project_inner figure {
@@ -1130,6 +1149,7 @@ pointer-events: none;
     position: relative;
     height: 580px;
     background: #2D2D2D;
+    overflow: hidden;
 }
 
 #themes .column {
@@ -1476,20 +1496,21 @@ pointer-events: none;
     .domains_ls li {
         font-size: 2.5rem;
         line-height: 1.5;
-        margin-right: 21px
+        margin-right: 25px;
+        padding-left: 30px;
     }
     .domains_ls li::before {
-        font-size: 2.25rem;
-        left: -20px;
+        font-size: 1.5rem;
+        left: 0;
         line-height: 1.5;
         width: 20px
     }
     .domains_ls li::after {
-        margin-left: 5px;
+        margin-left: 25px;
         width: 32px;
     }
     .domains_ls {
-        width: 130%;
+        width: 150%;
     }
 }
 
@@ -1499,24 +1520,26 @@ pointer-events: none;
     }
     .domains_ls li::before {
         font-size: 1.5rem;
-        left: -24px;
+        left: 0;
         line-height: 1.5;
     }
     .domains_ls li::after {
-        margin-left: 10px
+        margin-left: 30px
     }
 }
 
 @media all and (min-width:601px) and (max-width:1200px) {
     .domains_ls li {
-        font-size: 54px;
         line-height: 1.5;
+        padding-left: 30px;
+        font-size: 2rem;
     }
 }
 
 @media all and (min-width:901px) {
     .domains_ls li {
-        letter-spacing: -4px
+        letter-spacing: -4px;
+        padding-left: 30px;
     }
 }
 
@@ -1524,22 +1547,25 @@ pointer-events: none;
     .domains_ls li {
         font-size: 3.55rem;
         line-height: 1.5;
+        padding-left: 25px;
     }
 }
 
 @media all and (min-width:1501px) {
     .domains_ls li {
         line-height: 1.6;
+        font-size: 3.55rem;
         margin-right: 59px;
+        padding-left: 30px;
     }
     .domains_ls li::before {
         font-size: 2.125rem;
-        left: -39px;
+        left: 0;
         letter-spacing: -1px;
         line-height: 56px;
     }
     .domains_ls li::after {
-        margin-left: 20px;
+        margin-left: 50px;
     }
 }
 

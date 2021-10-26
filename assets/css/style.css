@@ -904,4 +904,7 @@ form label {
     .hd_s {
         font-size: 2rem;
     }
+    .page_progress {
+        z-index: 9999;
+    }
 }

@@ -232,6 +232,7 @@ footer .fln {
     }
     .footer_section.sol_email .ft_ls_sec:first-child {
         margin-bottom: 30px;
+        width: 100%;
     }
     .footer_upper_side .footer_section.sol_email .foot_nav {
         display: block;
