@@ -558,8 +558,8 @@
     position: absolute;
     width: 32px;
     height: 32px;
-    right: -42px;
-    top: -3px;
+    right: -46px;
+    top: -7px;
     opacity: 0;
     -webkit-transition: all .6s cubic-bezier(.19, 1, .22, 1);
     transition: all .6s cubic-bezier(.19, 1, .22, 1)
@@ -568,7 +568,9 @@
 .see_all_nv .arrow i {
     font-style: normal;
     position: absolute;
-    top: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
     left: -12px;
     -webkit-transition: all .6s cubic-bezier(.19, 1, .22, 1);
     transition: all .6s cubic-bezier(.19, 1, .22, 1)
@@ -587,9 +589,9 @@
 
 .see_all_nv .arrow i span {
     position: relative;
-    left: 0;
-    top: -7px;
-    font-size: 31px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
     padding: 0;
     -webkit-transition: all .6s cubic-bezier(.19, 1, .22, 1);
     transition: all .6s cubic-bezier(.19, 1, .22, 1)
@@ -597,8 +599,8 @@
 
 .see_all_nv .arrow svg {
     position: absolute;
-    top: -3px;
-    left: 5px
+    top: 0;
+    left: 0;
 }
 
 .see_all_nv .arrow-icon--circle {
@@ -612,7 +614,7 @@
 }
 
 .see_all_nv:hover .arrow i {
-    left: -3px;
+    left: -8px;
 }
 
 .nw_projects h2 {
